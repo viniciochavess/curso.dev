@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+
     "dev": "next dev",
     "prettier:write": "npx prettier . --write",
-    "prettier:check": "npx prettier . --check"
+    "prettier:check": "npx prettier . --check",
+    "test":"jest",
+    "test:watch": "watch jest"
+
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,7 @@
     "url": "https://github.com/viniciochavess/curso.dev/issues"
   },
   "dependencies": {
+    "jest": "^26.6.2",
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
