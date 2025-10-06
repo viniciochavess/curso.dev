@@ -4,9 +4,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run docker:up && next dev",
     "prettier:write": "npx prettier . --write",
     "prettier:check": "npx prettier . --check",
+    "docker:up": "docker compose -f infra/docker-compose.yml up -d;",
+    "docker:down": "docker compose -f infra/docker-compose.yml down;",
+    "docker:stop": "docker compose -f infra/docker-compose.yml stop;",
     "test": "vitest run",
     "test:watch": "vitest --watch"
   },

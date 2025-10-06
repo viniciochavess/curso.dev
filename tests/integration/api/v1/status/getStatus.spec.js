@@ -1,4 +1,4 @@
-import query from "../../../../../infra/database/index.js";
+import query from "@/infra/database";
 import { test, expect } from "vitest";
 
 import "dotenv/config";
